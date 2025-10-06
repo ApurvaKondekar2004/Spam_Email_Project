@@ -1,0 +1,49 @@
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VS Code settings
+.vscode/
+
+# System-specific files
+.DS_Store
+Thumbs.db
+
+# Model artifacts and training outputs
+artifacts/
+models/
+checkpoints/
+
+# Logs
+logs/
+*.log
+
+# Data files (avoid pushing raw datasets if large or sensitive)
+data/
+notebook/data/
+*.csv
+*.tsv
+*.json
+*.xlsx
+
+# Environment and dependency files
+*.env
+.env.*
+
+# Just in case, ignore large binary model files
+*.bin
+*.pt
+*.pkl
+*.safetensors
