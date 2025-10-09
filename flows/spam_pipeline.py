@@ -1,7 +1,7 @@
-import sys
-
-sys.path.append("D:/Spam_Email_Project")
 from prefect import flow, task
+import sys
+sys.path.append("D:/Spam_Email_Project")
+
 from src.etl import load_huggingface_to_db
 from src.train_model import train_model
 from src.retrain_model import retrain_model_weekly
@@ -21,7 +21,7 @@ def retrain_task():
     retrain_model_weekly()
     return "Retraining completed"
 
-@flow(name="spam_email_pipeline")
+@flow(name="spam_email_flow")
 def spam_email_flow():
     etl_task()
     train_task()

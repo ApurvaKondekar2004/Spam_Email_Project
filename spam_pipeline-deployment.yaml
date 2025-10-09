@@ -1,0 +1,16 @@
+name: weekly_spam_pipeline
+flow_name: spam_email_flow
+schedule:
+  type: cron
+  cron: "0 9 * * MON"
+  timezone: "UTC"
+work_pool_name: default
+infrastructure:
+  type: process
+  env:
+    PREFECT_LOGGING_LEVEL: INFO
+storage:
+  type: github
+  repository: ApurvaKondekar2004/Spam_Email_Project
+  path: flows/spam_pipeline.py
+  branch: main
