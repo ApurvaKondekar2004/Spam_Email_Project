@@ -1,0 +1,10 @@
+pandas
+numpy 
+sqlalchemy
+scikit-learn
+xgboost
+datasets
+gensim
+nltk
+streamlit
+prefect
