@@ -27,3 +27,8 @@ Web App: Streamlit
 Automation: Prefect workflow orchestration
 
 Dataset: HuggingFace’s Enron Spam Dataset
+
+**This is how it looks on Prefect Cloud**
+<img width="1570" height="177" alt="image" src="https://github.com/user-attachments/assets/c6fc6f2e-d507-4cd9-bc94-75437d2555e5" />
+
+
